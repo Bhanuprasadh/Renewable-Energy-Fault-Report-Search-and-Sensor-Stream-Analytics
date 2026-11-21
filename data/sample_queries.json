@@ -1,0 +1,110 @@
+[
+  {
+    "query_id": "Q-001",
+    "query_text": "gearbox bearing vibration pitting high-speed shaft",
+    "structured_filter": {
+      "asset_types": [
+        "WIND_TURBINE"
+      ],
+      "components": [
+        "GEARBOX"
+      ]
+    },
+    "relevant_fault_ids": [
+      "FLT-GOLD-001",
+      "FLT-GOLD-015"
+    ]
+  },
+  {
+    "query_id": "Q-002",
+    "query_text": "inverter IGBT temperature thermal runaway dust cooling",
+    "structured_filter": {
+      "asset_types": [
+        "SOLAR_PV"
+      ],
+      "components": [
+        "INVERTER"
+      ]
+    },
+    "relevant_fault_ids": [
+      "FLT-GOLD-002",
+      "FLT-GOLD-016"
+    ]
+  },
+  {
+    "query_id": "Q-003",
+    "query_text": "hydraulic pitch actuator seal leak feathering failure",
+    "structured_filter": {
+      "asset_types": [
+        "WIND_TURBINE"
+      ],
+      "components": [
+        "PITCH_SYSTEM"
+      ]
+    },
+    "relevant_fault_ids": [
+      "FLT-GOLD-003",
+      "FLT-GOLD-017"
+    ]
+  },
+  {
+    "query_id": "Q-004",
+    "query_text": "combiner box blown fuse string current imbalance",
+    "structured_filter": {
+      "asset_types": [
+        "SOLAR_PV"
+      ],
+      "components": [
+        "COMBINER_BOX"
+      ]
+    },
+    "relevant_fault_ids": [
+      "FLT-GOLD-004"
+    ]
+  },
+  {
+    "query_id": "Q-005",
+    "query_text": "generator stator winding overheating asymmetric current",
+    "structured_filter": {
+      "asset_types": [
+        "WIND_TURBINE"
+      ],
+      "components": [
+        "GENERATOR"
+      ]
+    },
+    "relevant_fault_ids": [
+      "FLT-GOLD-005",
+      "FLT-GOLD-019"
+    ]
+  },
+  {
+    "query_id": "Q-006",
+    "query_text": "battery storage thermal runaway BESS cell temperature variance",
+    "structured_filter": {
+      "asset_types": [
+        "SOLAR_PV"
+      ],
+      "components": [
+        "BATTERY_STORAGE"
+      ]
+    },
+    "relevant_fault_ids": [
+      "FLT-GOLD-008",
+      "FLT-GOLD-018"
+    ]
+  },
+  {
+    "query_id": "Q-007",
+    "query_text": "transformer top oil temperature Buchholz gas alarm",
+    "structured_filter": {
+      "components": [
+        "TRANSFORMER"
+      ]
+    },
+    "relevant_fault_ids": [
+      "FLT-GOLD-012",
+      "FLT-GOLD-020"
+    ]
+  }
+]

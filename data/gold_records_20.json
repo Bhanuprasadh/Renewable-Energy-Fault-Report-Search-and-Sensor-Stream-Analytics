@@ -1,0 +1,502 @@
+[
+  {
+    "fault_id": "FLT-GOLD-001",
+    "asset_id": "WIND-TX-001",
+    "asset_type": "WIND_TURBINE",
+    "component": "GEARBOX",
+    "severity": "CRITICAL",
+    "time_interval": {
+      "start_time": "2026-01-05T08:00:00Z",
+      "end_time": "2026-01-05T14:30:00Z"
+    },
+    "sensor_range": {
+      "metric_name": "Bearing_Vibration_RMS",
+      "min_val": 4.8,
+      "max_val": 12.4,
+      "unit": "mm/s"
+    },
+    "fault_description": "High-speed stage planetary gear pitting and severe bearing vibration spike.",
+    "maintenance_notes": "Emergency shutdown initiated. Oil analysis showed ferrous particle concentration exceeding 120 ppm. Intermediate shaft bearing replaced.",
+    "root_cause_category": "Mechanical Wear",
+    "power_loss_kwh": 6500.0,
+    "version": 1,
+    "is_deleted": false,
+    "created_at": "2026-01-05T08:15:00Z",
+    "updated_at": "2026-01-05T15:00:00Z"
+  },
+  {
+    "fault_id": "FLT-GOLD-002",
+    "asset_id": "SOLAR-CA-014",
+    "asset_type": "SOLAR_PV",
+    "component": "INVERTER",
+    "severity": "HIGH",
+    "time_interval": {
+      "start_time": "2026-01-08T11:00:00Z",
+      "end_time": "2026-01-08T16:00:00Z"
+    },
+    "sensor_range": {
+      "metric_name": "IGBT_Junction_Temp",
+      "min_val": 88.0,
+      "max_val": 115.5,
+      "unit": "Celsius"
+    },
+    "fault_description": "Central inverter bridge IGBT junction thermal runaway and switching desynchronization.",
+    "maintenance_notes": "Cooling fan filter clogged with desert dust. Fan motor replaced and thermal paste reapplied to IGBT heat sink.",
+    "root_cause_category": "Cooling Failure",
+    "power_loss_kwh": 3800.0,
+    "version": 1,
+    "is_deleted": false,
+    "created_at": "2026-01-08T11:20:00Z",
+    "updated_at": "2026-01-08T17:00:00Z"
+  },
+  {
+    "fault_id": "FLT-GOLD-003",
+    "asset_id": "WIND-WY-023",
+    "asset_type": "WIND_TURBINE",
+    "component": "PITCH_SYSTEM",
+    "severity": "CRITICAL",
+    "time_interval": {
+      "start_time": "2026-01-12T03:15:00Z",
+      "end_time": "2026-01-12T09:45:00Z"
+    },
+    "sensor_range": {
+      "metric_name": "Hydraulic_Pitch_Pressure",
+      "min_val": 45.0,
+      "max_val": 82.0,
+      "unit": "bar"
+    },
+    "fault_description": "Blade 2 hydraulic pitch actuator seal rupture causing blade feathering failure during high-wind gust.",
+    "maintenance_notes": "Rapid hydraulic pressure drop from nominal 180 bar down to 45 bar. Backup accumulator deployed. High-pressure seal replaced.",
+    "root_cause_category": "Hydraulic Failure",
+    "power_loss_kwh": 5200.0,
+    "version": 1,
+    "is_deleted": false,
+    "created_at": "2026-01-12T03:30:00Z",
+    "updated_at": "2026-01-12T11:00:00Z"
+  },
+  {
+    "fault_id": "FLT-GOLD-004",
+    "asset_id": "SOLAR-AZ-005",
+    "asset_type": "SOLAR_PV",
+    "component": "COMBINER_BOX",
+    "severity": "MEDIUM",
+    "time_interval": {
+      "start_time": "2026-01-15T12:00:00Z",
+      "end_time": "2026-01-15T15:30:00Z"
+    },
+    "sensor_range": {
+      "metric_name": "String_Current_Imbalance",
+      "min_val": 2.1,
+      "max_val": 8.9,
+      "unit": "Amperes"
+    },
+    "fault_description": "Combiner box string 4 blown DC fuse due to sustained partial shading mismatch and thermal stress.",
+    "maintenance_notes": "15A gPV cylindrical fuse replaced. IR thermography revealed localized connection terminal hotspot.",
+    "root_cause_category": "Electrical Fault",
+    "power_loss_kwh": 420.0,
+    "version": 1,
+    "is_deleted": false,
+    "created_at": "2026-01-15T12:10:00Z",
+    "updated_at": "2026-01-15T16:00:00Z"
+  },
+  {
+    "fault_id": "FLT-GOLD-005",
+    "asset_id": "WIND-OR-088",
+    "asset_type": "WIND_TURBINE",
+    "component": "GENERATOR",
+    "severity": "HIGH",
+    "time_interval": {
+      "start_time": "2026-01-18T14:00:00Z",
+      "end_time": "2026-01-18T22:00:00Z"
+    },
+    "sensor_range": {
+      "metric_name": "Stator_Winding_Temp",
+      "min_val": 110.0,
+      "max_val": 158.0,
+      "unit": "Celsius"
+    },
+    "fault_description": "DFIG generator stator winding phase U overheating and asymmetric phase current draw.",
+    "maintenance_notes": "Insulation resistance dropped below 5 Megohms. Stator cleaned with dry ice blasting and localized re-insulation applied.",
+    "root_cause_category": "Insulation Degradation",
+    "power_loss_kwh": 7100.0,
+    "version": 1,
+    "is_deleted": false,
+    "created_at": "2026-01-18T14:20:00Z",
+    "updated_at": "2026-01-18T23:00:00Z"
+  },
+  {
+    "fault_id": "FLT-GOLD-006",
+    "asset_id": "SOLAR-NV-031",
+    "asset_type": "SOLAR_PV",
+    "component": "SOLAR_PANEL",
+    "severity": "MEDIUM",
+    "time_interval": {
+      "start_time": "2026-01-22T09:30:00Z",
+      "end_time": "2026-01-22T17:00:00Z"
+    },
+    "sensor_range": {
+      "metric_name": "Module_Hotspot_Delta_T",
+      "min_val": 15.0,
+      "max_val": 42.5,
+      "unit": "Celsius"
+    },
+    "fault_description": "Bypass diode short-circuit causing localized module cell hot-spot and polymer backsheet yellowing.",
+    "maintenance_notes": "Junction box Schottky diode bypassed permanently. Damaged 400W monocrystalline module swapped out under warranty.",
+    "root_cause_category": "Component Degradation",
+    "power_loss_kwh": 310.0,
+    "version": 1,
+    "is_deleted": false,
+    "created_at": "2026-01-22T10:00:00Z",
+    "updated_at": "2026-01-22T17:30:00Z"
+  },
+  {
+    "fault_id": "FLT-GOLD-007",
+    "asset_id": "WIND-IA-012",
+    "asset_type": "WIND_TURBINE",
+    "component": "YAW_SYSTEM",
+    "severity": "HIGH",
+    "time_interval": {
+      "start_time": "2026-01-25T18:00:00Z",
+      "end_time": "2026-01-26T02:00:00Z"
+    },
+    "sensor_range": {
+      "metric_name": "Yaw_Motor_Current",
+      "min_val": 28.0,
+      "max_val": 64.0,
+      "unit": "Amperes"
+    },
+    "fault_description": "Yaw drive gear tooth spalling and drive motor 2 excessive torque stall during wind direction tracking.",
+    "maintenance_notes": "Pinion gear backlash inspected. Found 3 mm radial play. Yaw brake caliper pads replaced and bull gear relubricated.",
+    "root_cause_category": "Mechanical Wear",
+    "power_loss_kwh": 4800.0,
+    "version": 1,
+    "is_deleted": false,
+    "created_at": "2026-01-25T18:30:00Z",
+    "updated_at": "2026-01-26T03:00:00Z"
+  },
+  {
+    "fault_id": "FLT-GOLD-008",
+    "asset_id": "SOLAR-NM-077",
+    "asset_type": "SOLAR_PV",
+    "component": "BATTERY_STORAGE",
+    "severity": "CRITICAL",
+    "time_interval": {
+      "start_time": "2026-01-28T13:00:00Z",
+      "end_time": "2026-01-28T19:00:00Z"
+    },
+    "sensor_range": {
+      "metric_name": "BESS_Rack_Temp_Variance",
+      "min_val": 6.5,
+      "max_val": 18.2,
+      "unit": "Celsius"
+    },
+    "fault_description": "Lithium-ion BESS rack 3 thermal divergence and internal cell resistance deviation during C-rate discharge.",
+    "maintenance_notes": "BMS triggered safety contactor open. HVAC coolant loop air bubble purged and module 3B removed for offline cycling.",
+    "root_cause_category": "Thermal Runaway Precursor",
+    "power_loss_kwh": 5100.0,
+    "version": 1,
+    "is_deleted": false,
+    "created_at": "2026-01-28T13:15:00Z",
+    "updated_at": "2026-01-28T20:00:00Z"
+  },
+  {
+    "fault_id": "FLT-GOLD-009",
+    "asset_id": "WIND-CO-055",
+    "asset_type": "WIND_TURBINE",
+    "component": "MAIN_BEARING",
+    "severity": "HIGH",
+    "time_interval": {
+      "start_time": "2026-02-01T06:00:00Z",
+      "end_time": "2026-02-01T16:00:00Z"
+    },
+    "sensor_range": {
+      "metric_name": "Main_Bearing_Acoustic_Emission",
+      "min_val": 42.0,
+      "max_val": 89.0,
+      "unit": "dB"
+    },
+    "fault_description": "Main spherical roller bearing raceway micro-cracking and automated grease distributor failure.",
+    "maintenance_notes": "Progressive grease line blockage cleared at injector nozzle 4. Flushed old lubricant and injected lithium complex EP grease.",
+    "root_cause_category": "Lubrication Starvation",
+    "power_loss_kwh": 6200.0,
+    "version": 1,
+    "is_deleted": false,
+    "created_at": "2026-02-01T06:30:00Z",
+    "updated_at": "2026-02-01T17:00:00Z"
+  },
+  {
+    "fault_id": "FLT-GOLD-010",
+    "asset_id": "SOLAR-TX-102",
+    "asset_type": "SOLAR_PV",
+    "component": "MPPT_CONTROLLER",
+    "severity": "LOW",
+    "time_interval": {
+      "start_time": "2026-02-04T10:00:00Z",
+      "end_time": "2026-02-04T13:00:00Z"
+    },
+    "sensor_range": {
+      "metric_name": "MPPT_Efficiency_Tracking",
+      "min_val": 84.0,
+      "max_val": 91.2,
+      "unit": "Percent"
+    },
+    "fault_description": "MPPT tracking oscillation in fluctuating irradiance conditions due to firmware perturbation step size.",
+    "maintenance_notes": "Firmware updated from v2.3.1 to v2.4.0 with adaptive hill-climbing algorithm. Tracking stability verified.",
+    "root_cause_category": "Firmware Bug",
+    "power_loss_kwh": 180.0,
+    "version": 1,
+    "is_deleted": false,
+    "created_at": "2026-02-04T10:15:00Z",
+    "updated_at": "2026-02-04T13:30:00Z"
+  },
+  {
+    "fault_id": "FLT-GOLD-011",
+    "asset_id": "WIND-ND-004",
+    "asset_type": "WIND_TURBINE",
+    "component": "ROTOR_BLADE",
+    "severity": "HIGH",
+    "time_interval": {
+      "start_time": "2026-02-08T00:00:00Z",
+      "end_time": "2026-02-08T12:00:00Z"
+    },
+    "sensor_range": {
+      "metric_name": "Blade_Aero_Acoustic_Noise",
+      "min_val": 92.0,
+      "max_val": 118.0,
+      "unit": "dBA"
+    },
+    "fault_description": "Blade tip leading-edge erosion and aerodynamic delamination following freezing rain event.",
+    "maintenance_notes": "Rope access technician applied polyurethane leading-edge protective tape over 4-meter section near tip.",
+    "root_cause_category": "Environmental Erosion",
+    "power_loss_kwh": 5900.0,
+    "version": 1,
+    "is_deleted": false,
+    "created_at": "2026-02-08T00:45:00Z",
+    "updated_at": "2026-02-08T13:00:00Z"
+  },
+  {
+    "fault_id": "FLT-GOLD-012",
+    "asset_id": "SOLAR-FL-019",
+    "asset_type": "SOLAR_PV",
+    "component": "TRANSFORMER",
+    "severity": "CRITICAL",
+    "time_interval": {
+      "start_time": "2026-02-12T07:00:00Z",
+      "end_time": "2026-02-12T15:00:00Z"
+    },
+    "sensor_range": {
+      "metric_name": "Transformer_Top_Oil_Temp",
+      "min_val": 94.0,
+      "max_val": 128.0,
+      "unit": "Celsius"
+    },
+    "fault_description": "Medium-voltage step-up transformer top oil overheating and Buchholz gas accumulation alarm.",
+    "maintenance_notes": "DGA test indicated acetylene traces (0.8 ppm). Forced air radiator fans rewired after contactor failure.",
+    "root_cause_category": "Thermal & Electrical Stress",
+    "power_loss_kwh": 8400.0,
+    "version": 1,
+    "is_deleted": false,
+    "created_at": "2026-02-12T07:20:00Z",
+    "updated_at": "2026-02-12T16:00:00Z"
+  },
+  {
+    "fault_id": "FLT-GOLD-013",
+    "asset_id": "WIND-IL-033",
+    "asset_type": "WIND_TURBINE",
+    "component": "SUBSTATION_BREAKER",
+    "severity": "HIGH",
+    "time_interval": {
+      "start_time": "2026-02-15T16:30:00Z",
+      "end_time": "2026-02-15T21:00:00Z"
+    },
+    "sensor_range": {
+      "metric_name": "SF6_Gas_Pressure",
+      "min_val": 4.1,
+      "max_val": 5.8,
+      "unit": "bar"
+    },
+    "fault_description": "Substation 34.5kV feeder vacuum breaker SF6 insulation gas low pressure trip during feeder fault.",
+    "maintenance_notes": "Gas manifold O-ring seal replaced and re-pressurized with certified SF6 gas. Trip latch mechanism re-timed.",
+    "root_cause_category": "Gas Leakage",
+    "power_loss_kwh": 4600.0,
+    "version": 1,
+    "is_deleted": false,
+    "created_at": "2026-02-15T16:45:00Z",
+    "updated_at": "2026-02-15T22:00:00Z"
+  },
+  {
+    "fault_id": "FLT-GOLD-014",
+    "asset_id": "SOLAR-UT-008",
+    "asset_type": "SOLAR_PV",
+    "component": "SOLAR_PANEL",
+    "severity": "LOW",
+    "time_interval": {
+      "start_time": "2026-02-18T11:00:00Z",
+      "end_time": "2026-02-18T14:00:00Z"
+    },
+    "sensor_range": {
+      "metric_name": "Soiling_Ratio",
+      "min_val": 0.76,
+      "max_val": 0.88,
+      "unit": "Ratio"
+    },
+    "fault_description": "Significant soiling loss across tracker row 12 following regional dust storm.",
+    "maintenance_notes": "Autonomous dry cleaning robot deployed across block B. Soiling ratio recovered to 0.985.",
+    "root_cause_category": "Environmental Soiling",
+    "power_loss_kwh": 220.0,
+    "version": 1,
+    "is_deleted": false,
+    "created_at": "2026-02-18T11:30:00Z",
+    "updated_at": "2026-02-18T14:30:00Z"
+  },
+  {
+    "fault_id": "FLT-GOLD-015",
+    "asset_id": "WIND-MN-061",
+    "asset_type": "WIND_TURBINE",
+    "component": "GEARBOX",
+    "severity": "MEDIUM",
+    "time_interval": {
+      "start_time": "2026-02-21T05:00:00Z",
+      "end_time": "2026-02-21T11:00:00Z"
+    },
+    "sensor_range": {
+      "metric_name": "Gearbox_Oil_Particle_Count",
+      "min_val": 1800.0,
+      "max_val": 4200.0,
+      "unit": "particles/mL"
+    },
+    "fault_description": "Gearbox offline conditioning filter saturation causing optical particle sensor threshold breach.",
+    "maintenance_notes": "10-micron pleated cellulose filter cartridge replaced. Main lube pump pressure restored to 3.2 bar.",
+    "root_cause_category": "Filtration Saturation",
+    "power_loss_kwh": 2900.0,
+    "version": 1,
+    "is_deleted": false,
+    "created_at": "2026-02-21T05:30:00Z",
+    "updated_at": "2026-02-21T11:30:00Z"
+  },
+  {
+    "fault_id": "FLT-GOLD-016",
+    "asset_id": "SOLAR-CO-022",
+    "asset_type": "SOLAR_PV",
+    "component": "INVERTER",
+    "severity": "HIGH",
+    "time_interval": {
+      "start_time": "2026-02-24T12:00:00Z",
+      "end_time": "2026-02-24T18:00:00Z"
+    },
+    "sensor_range": {
+      "metric_name": "DC_Bus_Ripple_Voltage",
+      "min_val": 14.5,
+      "max_val": 38.0,
+      "unit": "Volts"
+    },
+    "fault_description": "DC link capacitor bank degradation causing high AC ripple on 800V DC bus.",
+    "maintenance_notes": "Capacitor C3 and C4 electrolyte drying identified with ESR meter. Replaced full capacitor bank module.",
+    "root_cause_category": "Electrical Degradation",
+    "power_loss_kwh": 3400.0,
+    "version": 1,
+    "is_deleted": false,
+    "created_at": "2026-02-24T12:15:00Z",
+    "updated_at": "2026-02-24T18:45:00Z"
+  },
+  {
+    "fault_id": "FLT-GOLD-017",
+    "asset_id": "WIND-OK-017",
+    "asset_type": "WIND_TURBINE",
+    "component": "PITCH_SYSTEM",
+    "severity": "MEDIUM",
+    "time_interval": {
+      "start_time": "2026-02-27T08:00:00Z",
+      "end_time": "2026-02-27T13:00:00Z"
+    },
+    "sensor_range": {
+      "metric_name": "Pitch_Motor_Encoder_Delta",
+      "min_val": 1.8,
+      "max_val": 5.2,
+      "unit": "Degrees"
+    },
+    "fault_description": "Optical pitch encoder signal noise and position mismatch relative to safety limit switches.",
+    "maintenance_notes": "Encoder optical disc cleaned with isopropyl alcohol. Cable shielding ground lug tightened.",
+    "root_cause_category": "Sensor Signal Noise",
+    "power_loss_kwh": 2100.0,
+    "version": 1,
+    "is_deleted": false,
+    "created_at": "2026-02-27T08:30:00Z",
+    "updated_at": "2026-02-27T13:30:00Z"
+  },
+  {
+    "fault_id": "FLT-GOLD-018",
+    "asset_id": "SOLAR-NC-003",
+    "asset_type": "SOLAR_PV",
+    "component": "BATTERY_STORAGE",
+    "severity": "LOW",
+    "time_interval": {
+      "start_time": "2026-03-02T10:00:00Z",
+      "end_time": "2026-03-02T13:00:00Z"
+    },
+    "sensor_range": {
+      "metric_name": "Aux_Chiller_Current",
+      "min_val": 12.0,
+      "max_val": 26.5,
+      "unit": "Amperes"
+    },
+    "fault_description": "Auxiliary liquid cooling chiller pump high vibration and flow constriction.",
+    "maintenance_notes": "Centrifugal pump impeller inspected for cavitations. Suction strainer cleaned of debris.",
+    "root_cause_category": "Cooling System",
+    "power_loss_kwh": 140.0,
+    "version": 1,
+    "is_deleted": false,
+    "created_at": "2026-03-02T10:15:00Z",
+    "updated_at": "2026-03-02T13:15:00Z"
+  },
+  {
+    "fault_id": "FLT-GOLD-019",
+    "asset_id": "WIND-KS-071",
+    "asset_type": "WIND_TURBINE",
+    "component": "GENERATOR",
+    "severity": "CRITICAL",
+    "time_interval": {
+      "start_time": "2026-03-05T01:00:00Z",
+      "end_time": "2026-03-05T09:00:00Z"
+    },
+    "sensor_range": {
+      "metric_name": "Generator_NDE_Bearing_Vib",
+      "min_val": 6.2,
+      "max_val": 16.8,
+      "unit": "mm/s"
+    },
+    "fault_description": "Generator Non-Drive-End (NDE) ceramic bearing fluting discharge and catastrophic cage fatigue.",
+    "maintenance_notes": "Shaft grounding brush worn completely down. Replaced insulated bearing and installed new dual carbon grounding ring.",
+    "root_cause_category": "Electrical Bearing Fluting",
+    "power_loss_kwh": 7800.0,
+    "version": 1,
+    "is_deleted": false,
+    "created_at": "2026-03-05T01:30:00Z",
+    "updated_at": "2026-03-05T10:00:00Z"
+  },
+  {
+    "fault_id": "FLT-GOLD-020",
+    "asset_id": "SOLAR-GA-044",
+    "asset_type": "SOLAR_PV",
+    "component": "TRANSFORMER",
+    "severity": "HIGH",
+    "time_interval": {
+      "start_time": "2026-03-08T14:00:00Z",
+      "end_time": "2026-03-08T20:00:00Z"
+    },
+    "sensor_range": {
+      "metric_name": "Winding_Hotspot_Temp",
+      "min_val": 105.0,
+      "max_val": 142.0,
+      "unit": "Celsius"
+    },
+    "fault_description": "Pad-mounted transformer secondary winding thermal hotspot under continuous peak grid export.",
+    "maintenance_notes": "Oil sampling confirmed elevated CO/CO2 ratio indicating paper insulation thermal distress. Load curtailed by 15% pending cool-down.",
+    "root_cause_category": "Thermal Overload",
+    "power_loss_kwh": 4100.0,
+    "version": 1,
+    "is_deleted": false,
+    "created_at": "2026-03-08T14:20:00Z",
+    "updated_at": "2026-03-08T21:00:00Z"
+  }
+]
